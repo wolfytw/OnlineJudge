@@ -40,3 +40,8 @@ class SPJLanguageNameMultiChoiceField(serializers.ListField):
             if item not in SysOptions.spj_language_names:
                 raise InvalidLanguage(item)
         return data
+
+
+class AIAssistSerializer(serializers.Serializer):
+    problem_id = serializers.CharField(max_length=32)
+    user_attempt = serializers.CharField(required=False, allow_blank=True, allow_null=True)

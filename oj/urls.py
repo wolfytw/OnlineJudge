@@ -1,4 +1,5 @@
 from django.conf.urls import include, url
+from utils.views import AIHintAPIView, AISolutionAPIView
 
 urlpatterns = [
     url(r"^api/", include("account.urls.oj")),
@@ -14,4 +15,7 @@ urlpatterns = [
     url(r"^api/", include("submission.urls.oj")),
     url(r"^api/admin/", include("submission.urls.admin")),
     url(r"^api/admin/", include("utils.urls")),
+    # AI assist endpoints
+    url(r"^api/ai/hint/?$", AIHintAPIView.as_view(), name="ai_hint_api"),
+    url(r"^api/ai/solution/?$", AISolutionAPIView.as_view(), name="ai_solution_api"),
 ]

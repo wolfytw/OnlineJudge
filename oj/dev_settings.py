@@ -20,6 +20,10 @@ REDIS_CONF = {
     'port': get_env('REDIS_PORT', '6380')
 }
 
+# Azure OpenAI settings
+AZURE_OPENAI_ENDPOINT = get_env("AZURE_OPENAI_ENDPOINT", None)
+AZURE_OPENAI_KEY = get_env("AZURE_OPENAI_KEY", None)
+AZURE_OPENAI_DEPLOYMENT_NAME = get_env("AZURE_OPENAI_DEPLOYMENT_NAME", None)
 
 DEBUG = True
 

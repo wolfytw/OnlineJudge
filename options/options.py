@@ -103,6 +103,7 @@ class OptionKeys:
     judge_server_token = "judge_server_token"
     throttling = "throttling"
     languages = "languages"
+    ai_assist_enabled = "ai_assist_enabled"
 
 
 class OptionDefaultValue:
@@ -117,6 +118,7 @@ class OptionDefaultValue:
     throttling = {"ip": {"capacity": 100, "fill_rate": 0.1, "default_capacity": 50},
                   "user": {"capacity": 20, "fill_rate": 0.03, "default_capacity": 10}}
     languages = languages
+    ai_assist_enabled = False
 
 
 class _SysOptionsMeta(type):
@@ -129,6 +131,7 @@ class _SysOptionsMeta(type):
         for item in mcs._get_keys():
             if not SysOptionsModel.objects.filter(key=item).exists():
                 default_value = getattr(OptionDefaultValue, item)
+                # Initialize ai_assist_enabled default
                 if callable(default_value):
                     default_value = default_value()
                 try:
@@ -260,6 +263,14 @@ class _SysOptionsMeta(type):
     @languages.setter
     def languages(cls, value):
         cls._set_option(OptionKeys.languages, value)
+
+    @my_property  # no ttl, read fresh
+    def ai_assist_enabled(cls):
+        return cls._get_option(OptionKeys.ai_assist_enabled)
+
+    @ai_assist_enabled.setter
+    def ai_assist_enabled(cls, value):
+        cls._set_option(OptionKeys.ai_assist_enabled, value)
 
     @my_property(ttl=DEFAULT_SHORT_TTL)
     def spj_languages(cls):
