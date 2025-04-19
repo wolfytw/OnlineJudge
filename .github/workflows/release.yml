@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - v**
+    branches:
+      - feature/ai-assist
   workflow_dispatch:
 
 jobs:
