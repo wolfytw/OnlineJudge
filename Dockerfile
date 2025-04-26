@@ -4,8 +4,8 @@ WORKDIR /app
 
 RUN <<EOS
 set -ex
-apk add unzip
-wget https://github.com/QingdaoU/OnlineJudgeFE/releases/download/oj_2.7.5/dist.zip
+apk update && apk add --no-cache unzip wget
+wget --tries=3 --timeout=30 https://github.com/QingdaoU/OnlineJudgeFE/releases/download/oj_2.7.5/dist.zip
 unzip dist.zip
 rm -f dist.zip
 EOS
