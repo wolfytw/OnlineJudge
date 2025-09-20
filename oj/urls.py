@@ -19,6 +19,8 @@ urlpatterns = [
     # AI assist endpoints
     url(r"^api/ai/hint/?$", AIHintAPIView.as_view(), name="ai_hint_api"),
     url(r"^api/ai/solution/?$", AISolutionAPIView.as_view(), name="ai_solution_api"),
+    url(r"^api/ai/", include("ai_assist.urls")),
+    url(r"^api/admin/", include("ai_assist.admin_urls")),
 ]
 
 # Add language prefix to URLs if needed

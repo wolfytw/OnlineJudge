@@ -104,6 +104,12 @@ class OptionKeys:
     throttling = "throttling"
     languages = "languages"
     ai_assist_enabled = "ai_assist_enabled"
+    openai_api_key = "openai_api_key"
+    openai_model = "openai_model"
+    openai_base_url = "openai_base_url"
+    azure_openai_endpoint = "azure_openai_endpoint"
+    azure_openai_key = "azure_openai_key"
+    azure_openai_deployment_name = "azure_openai_deployment_name"
 
 
 class OptionDefaultValue:
@@ -119,6 +125,12 @@ class OptionDefaultValue:
                   "user": {"capacity": 20, "fill_rate": 0.03, "default_capacity": 10}}
     languages = languages
     ai_assist_enabled = False
+    openai_api_key = ""
+    openai_model = "gpt-3.5-turbo"
+    openai_base_url = "https://api.openai.com/v1"
+    azure_openai_endpoint = ""
+    azure_openai_key = ""
+    azure_openai_deployment_name = ""
 
 
 class _SysOptionsMeta(type):
@@ -271,6 +283,54 @@ class _SysOptionsMeta(type):
     @ai_assist_enabled.setter
     def ai_assist_enabled(cls, value):
         cls._set_option(OptionKeys.ai_assist_enabled, value)
+
+    @my_property  # no ttl, read fresh
+    def openai_api_key(cls):
+        return cls._get_option(OptionKeys.openai_api_key)
+
+    @openai_api_key.setter
+    def openai_api_key(cls, value):
+        cls._set_option(OptionKeys.openai_api_key, value)
+
+    @my_property  # no ttl, read fresh
+    def openai_model(cls):
+        return cls._get_option(OptionKeys.openai_model)
+
+    @openai_model.setter
+    def openai_model(cls, value):
+        cls._set_option(OptionKeys.openai_model, value)
+
+    @my_property  # no ttl, read fresh
+    def openai_base_url(cls):
+        return cls._get_option(OptionKeys.openai_base_url)
+
+    @openai_base_url.setter
+    def openai_base_url(cls, value):
+        cls._set_option(OptionKeys.openai_base_url, value)
+
+    @my_property  # no ttl, read fresh
+    def azure_openai_endpoint(cls):
+        return cls._get_option(OptionKeys.azure_openai_endpoint)
+
+    @azure_openai_endpoint.setter
+    def azure_openai_endpoint(cls, value):
+        cls._set_option(OptionKeys.azure_openai_endpoint, value)
+
+    @my_property  # no ttl, read fresh
+    def azure_openai_key(cls):
+        return cls._get_option(OptionKeys.azure_openai_key)
+
+    @azure_openai_key.setter
+    def azure_openai_key(cls, value):
+        cls._set_option(OptionKeys.azure_openai_key, value)
+
+    @my_property  # no ttl, read fresh
+    def azure_openai_deployment_name(cls):
+        return cls._get_option(OptionKeys.azure_openai_deployment_name)
+
+    @azure_openai_deployment_name.setter
+    def azure_openai_deployment_name(cls, value):
+        cls._set_option(OptionKeys.azure_openai_deployment_name, value)
 
     @my_property(ttl=DEFAULT_SHORT_TTL)
     def spj_languages(cls):
