@@ -1,0 +1,522 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OnlineJudge 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-21 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Traditional Chinese <LL@li.org>\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# Common UI Elements
+msgid "Home"
+msgstr "首頁"
+
+msgid "Problems"
+msgstr "題目"
+
+msgid "Contest"
+msgstr "競賽"
+
+msgid "Contests"
+msgstr "競賽列表"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "Rank"
+msgstr "排名"
+
+msgid "Ranking"
+msgstr "排行榜"
+
+msgid "About"
+msgstr "關於"
+
+msgid "FAQ"
+msgstr "常見問題"
+
+msgid "API"
+msgstr "API"
+
+msgid "Admin"
+msgstr "管理"
+
+msgid "Login"
+msgstr "登入"
+
+msgid "Register"
+msgstr "註冊"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Profile"
+msgstr "個人資料"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Dashboard"
+msgstr "儀表板"
+
+# Problem related
+msgid "Problem"
+msgstr "題目"
+
+msgid "Problem List"
+msgstr "題目列表"
+
+msgid "Problem Details"
+msgstr "題目詳情"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Input"
+msgstr "輸入"
+
+msgid "Output"
+msgstr "輸出"
+
+msgid "Sample Input"
+msgstr "範例輸入"
+
+msgid "Sample Output"
+msgstr "範例輸出"
+
+msgid "Hint"
+msgstr "提示"
+
+msgid "Source"
+msgstr "來源"
+
+msgid "Time Limit"
+msgstr "時間限制"
+
+msgid "Memory Limit"
+msgstr "記憶體限制"
+
+msgid "Difficulty"
+msgstr "難度"
+
+msgid "Tags"
+msgstr "標籤"
+
+msgid "Accepted"
+msgstr "已通過"
+
+msgid "Wrong Answer"
+msgstr "答案錯誤"
+
+msgid "Time Limit Exceeded"
+msgstr "超過時間限制"
+
+msgid "Memory Limit Exceeded"
+msgstr "超過記憶體限制"
+
+msgid "Runtime Error"
+msgstr "執行錯誤"
+
+msgid "Compile Error"
+msgstr "編譯錯誤"
+
+msgid "Pending"
+msgstr "等候中"
+
+msgid "Judging"
+msgstr "評測中"
+
+msgid "Partially Accepted"
+msgstr "部分通過"
+
+msgid "Presentation Error"
+msgstr "格式錯誤"
+
+msgid "System Error"
+msgstr "系統錯誤"
+
+# Contest related
+msgid "Contest List"
+msgstr "競賽列表"
+
+msgid "Contest Details"
+msgstr "競賽詳情"
+
+msgid "Participants"
+msgstr "參賽者"
+
+msgid "Start Time"
+msgstr "開始時間"
+
+msgid "End Time"
+msgstr "結束時間"
+
+msgid "Duration"
+msgstr "持續時間"
+
+msgid "Rule"
+msgstr "規則"
+
+msgid "ACM"
+msgstr "ACM"
+
+msgid "OI"
+msgstr "OI"
+
+msgid "Real Time Rank"
+msgstr "即時排名"
+
+msgid "Board Frozen"
+msgstr "榜單凍結"
+
+msgid "Public"
+msgstr "公開"
+
+msgid "Private"
+msgstr "私人"
+
+msgid "Password Protected"
+msgstr "密碼保護"
+
+# Submission related
+msgid "Submit"
+msgstr "提交"
+
+msgid "Submission"
+msgstr "提交記錄"
+
+msgid "Submissions"
+msgstr "提交記錄"
+
+msgid "My Submissions"
+msgstr "我的提交"
+
+msgid "Code"
+msgstr "代碼"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "Score"
+msgstr "分數"
+
+msgid "Total Score"
+msgstr "總分"
+
+msgid "Execute Time"
+msgstr "執行時間"
+
+msgid "Memory Usage"
+msgstr "記憶體使用量"
+
+msgid "Length"
+msgstr "長度"
+
+msgid "Submit Time"
+msgstr "提交時間"
+
+msgid "Author"
+msgstr "作者"
+
+msgid "Created By"
+msgstr "建立者"
+
+# User related
+msgid "User"
+msgstr "用戶"
+
+msgid "Username"
+msgstr "用戶名"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Email"
+msgstr "電子郵件"
+
+msgid "Real Name"
+msgstr "真實姓名"
+
+msgid "School"
+msgstr "學校"
+
+msgid "Major"
+msgstr "主修"
+
+msgid "Mood"
+msgstr "心情"
+
+msgid "Blog"
+msgstr "部落格"
+
+msgid "Github"
+msgstr "Github"
+
+msgid "Avatar"
+msgstr "頭像"
+
+msgid "AC Problems"
+msgstr "已通過題目"
+
+msgid "Total Submissions"
+msgstr "總提交數"
+
+msgid "AC Rate"
+msgstr "通過率"
+
+# Common actions
+msgid "Save"
+msgstr "儲存"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Edit"
+msgstr "編輯"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "Create"
+msgstr "建立"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "View"
+msgstr "檢視"
+
+msgid "Download"
+msgstr "下載"
+
+msgid "Upload"
+msgstr "上傳"
+
+msgid "Import"
+msgstr "匯入"
+
+msgid "Export"
+msgstr "匯出"
+
+msgid "Search"
+msgstr "搜尋"
+
+msgid "Filter"
+msgstr "篩選"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "Next"
+msgstr "下一頁"
+
+msgid "Previous"
+msgstr "上一頁"
+
+msgid "First"
+msgstr "第一頁"
+
+msgid "Last"
+msgstr "最後一頁"
+
+msgid "Page"
+msgstr "頁面"
+
+msgid "Total"
+msgstr "總計"
+
+msgid "Loading"
+msgstr "載入中"
+
+msgid "No data"
+msgstr "無資料"
+
+msgid "Success"
+msgstr "成功"
+
+msgid "Error"
+msgstr "錯誤"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Info"
+msgstr "資訊"
+
+msgid "Confirm"
+msgstr "確認"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+# Admin related
+msgid "User Management"
+msgstr "用戶管理"
+
+msgid "Problem Management"
+msgstr "題目管理"
+
+msgid "Contest Management"
+msgstr "競賽管理"
+
+msgid "Announcement"
+msgstr "公告"
+
+msgid "System Config"
+msgstr "系統設定"
+
+msgid "Judge Server"
+msgstr "評測伺服器"
+
+msgid "Test Case"
+msgstr "測試案例"
+
+msgid "Special Judge"
+msgstr "特殊評測"
+
+msgid "Generate User"
+msgstr "產生用戶"
+
+msgid "Import Problems"
+msgstr "匯入題目"
+
+msgid "Export Problems"
+msgstr "匯出題目"
+
+# Website config
+msgid "Website Name"
+msgstr "網站名稱"
+
+msgid "Website Footer"
+msgstr "網站頁尾"
+
+msgid "Allow Register"
+msgstr "允許註冊"
+
+msgid "SMTP Config"
+msgstr "SMTP 設定"
+
+msgid "Backup"
+msgstr "備份"
+
+msgid "Prune Test Case"
+msgstr "清理測試案例"
+
+# Time and date
+msgid "seconds"
+msgstr "秒"
+
+msgid "minutes"
+msgstr "分鐘"
+
+msgid "hours"
+msgstr "小時"
+
+msgid "days"
+msgstr "天"
+
+msgid "ago"
+msgstr "前"
+
+msgid "years"
+msgstr "年"
+
+msgid "months"
+msgstr "月"
+
+msgid "weeks"
+msgstr "週"
+
+# Status messages
+msgid "Please login first"
+msgstr "請先登入"
+
+msgid "Permission denied"
+msgstr "權限不足"
+
+msgid "Operation successful"
+msgstr "操作成功"
+
+msgid "Operation failed"
+msgstr "操作失敗"
+
+msgid "Invalid input"
+msgstr "輸入無效"
+
+msgid "File not found"
+msgstr "檔案未找到"
+
+msgid "Network error"
+msgstr "網路錯誤"
+
+msgid "Server error"
+msgstr "伺服器錯誤"
+
+msgid "Validation error"
+msgstr "驗證錯誤"
+
+msgid "Data saved successfully"
+msgstr "資料儲存成功"
+
+msgid "Password changed successfully"
+msgstr "密碼變更成功"
+
+msgid "Email sent successfully"
+msgstr "電子郵件發送成功"
+
+msgid "Account created successfully"
+msgstr "帳號建立成功"
+
+msgid "Account activated successfully"
+msgstr "帳號啟用成功"
+
+# Form validation
+msgid "This field is required"
+msgstr "此欄位為必填"
+
+msgid "Password too short"
+msgstr "密碼太短"
+
+msgid "Password too weak"
+msgstr "密碼太弱"
+
+msgid "Passwords do not match"
+msgstr "密碼不一致"
+
+msgid "Invalid email format"
+msgstr "電子郵件格式無效"
+
+msgid "Username already exists"
+msgstr "用戶名已存在"
+
+msgid "Email already exists"
+msgstr "電子郵件已存在"
+
+msgid "Invalid username or password"
+msgstr "用戶名或密碼無效"
+
+msgid "Account disabled"
+msgstr "帳號已停用"
+
+msgid "Captcha required"
+msgstr "需要驗證碼"
+
+msgid "Invalid captcha"
+msgstr "驗證碼無效"

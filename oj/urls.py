@@ -1,4 +1,5 @@
 from django.conf.urls import include, url
+from django.conf.urls.i18n import i18n_patterns
 from utils.views import AIHintAPIView, AISolutionAPIView
 
 urlpatterns = [
@@ -19,3 +20,8 @@ urlpatterns = [
     url(r"^api/ai/hint/?$", AIHintAPIView.as_view(), name="ai_hint_api"),
     url(r"^api/ai/solution/?$", AISolutionAPIView.as_view(), name="ai_solution_api"),
 ]
+
+# Add language prefix to URLs if needed
+# urlpatterns += i18n_patterns(
+#     # Add any URL patterns that need language prefixes here
+# )
